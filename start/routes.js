@@ -22,7 +22,7 @@ Route.get('facebook', async ({ ally }) => {
   await ally.driver('facebook').redirect()
 })
 
-Route.get('authenticated/facebook', async ({ ally }) => {
+Route.get('facebook/authenticated', async ({ ally }) => {
   const user = await ally.driver('facebook').getUser()
 
   return user
